@@ -9,5 +9,4 @@ Ziel des Projektes ist es mit einfachen mitteln möglichst lustig zu erweitern
 ## Geplannt
 
 * Leaderboard mit Spielername
-* ~~Coole Idee 1~~
-* ~~Coole Idee 2~~
+
