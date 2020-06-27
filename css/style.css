@@ -5,8 +5,12 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 footer a{
     color: black;
     text-decoration: none;
+    margin-left: 180px;
+    margin-right: 180 px;
 }
