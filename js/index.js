@@ -770,12 +770,14 @@
          * Game over state.
          */
         gameOver: function () {
+            
             this.playSound(this.soundFx.HIT);
             vibrate(200);
 
             this.stop();
             this.crashed = true;
             this.distanceMeter.acheivement = false;
+            
 
             this.tRex.update(100, Trex.status.CRASHED);
 
@@ -792,7 +794,10 @@
             if (this.distanceRan > this.highestScore) {
                 this.highestScore = Math.ceil(this.distanceRan);
                 this.distanceMeter.setHighScore(this.highestScore);
+                
+                
             }
+            death(this.distanceMeter.highScore)
 
             // Reset the time clock.
             this.time = getTimeStamp();
@@ -2093,6 +2098,7 @@
                 distance).substr(-this.maxScoreUnits);
 
             this.highScore = ['10', '11', ''].concat(highScoreStr.split(''));
+            
         },
 
         /**
