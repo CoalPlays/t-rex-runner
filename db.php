@@ -9,7 +9,7 @@ $score = $_GET["score"];
 // Create connection
 $conn = new mysqli($servername, $username, $password);
 
-$sql = "insert into leaderboard (nick,score) values ('test','69')";
+$sql = "insert into leaderboard (nick,score) values (" . $nick . "," . $score .")";
 
 
 // Check connection
