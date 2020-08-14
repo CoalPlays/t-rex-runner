@@ -27,12 +27,16 @@ function death(score) {
 
 function askForSave() {
     nickname = prompt("Du hast einen Score von " + _score + " Punkten. Wie ist dein Nickname?")
-    if (nickname != null) {}
+    if (nickname != null) {
+        SaveData();
+    }
 }
 
 function SaveData() {
-    $.post("db.php", {
+    $.get("insertScore.php", {
         nick: nickname,
         score: _score
     })
-}
+    alert("Eintrag gespeichert")
+    location.reload();
+}   
