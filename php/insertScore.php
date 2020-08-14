@@ -11,7 +11,7 @@ $score = $_GET["score"];
 // Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
 
-$sql = "insert into scores (name,score) values (' . $nick . ',  $score  )";
+$sql = "insert into scores (name,score) values ('$nick',  $score  )";
 
 $conn->query($sql);
 
