@@ -44,5 +44,6 @@ function SaveData() {
         score: _score
     })
     alert("Eintrag gespeichert")
+    location.reload();
 
 }
