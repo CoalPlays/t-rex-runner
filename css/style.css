@@ -1,6 +1,7 @@
-h1{
+h1 {
     margin: 0;
 }
+
 footer {
     position: fixed;
     left: 0;
@@ -8,9 +9,52 @@ footer {
     width: 100%;
     text-align: center;
 }
-footer a{
+
+footer a {
     color: black;
     text-decoration: none;
     margin-left: 180px;
     margin-right: 180 px;
+}
+
+.dark {
+    animation: fadeDark 1s forwards;
+}
+
+.dark>#messageBox>h1 {
+    animation: fadeDark 1s forwards;
+}
+
+.white {
+    animation: fadeLight 1s forwards;
+}
+
+.white>#messageBox>h1 {
+    animation: fadeLight 1s forwards;
+}
+
+#darkmode {
+    float: right;
+}
+
+@keyframes fadeDark {
+    from {
+        color: black;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background-color: black;
+    }
+}
+
+@keyframes fadeLight {
+    from {
+        color: white;
+        background-color: black;
+    }
+    to {
+        color: black;
+        background-color: white;
+    }
 }

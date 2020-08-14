@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title>TRex Runner</title>
-    
+
     <!-- CSS  -->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    
+
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
@@ -25,6 +25,7 @@
 </head>
 
 <body id="t" class="offline">
+    <button id="darkmode">Dark Mode</button>
     <div id="messageBox" class="sendmessage">
         <h1 style="text-align: center;font-family: 'Oswald', sans-serif;">Drücke Leertaste zum zu Starten</h1>
         <div class="niokbutton" onclick="okbuttonsend()"></div>
@@ -48,13 +49,13 @@
     </div>
     <footer>
         <a href="https://github.com/InteractiveNinja/t-rex-runner" target="_blank">Github</a>
-        <a href="/leaderboard" >Leaderboard</a>
+        <a href="/leaderboard">Leaderboard</a>
         <a href="/info">Info</a>
     </footer>
 </body>
 
 <script>
-    document.onkeydown = function (evt) {
+    document.onkeydown = function(evt) {
         evt = evt || window.event;
         if (evt.keyCode == 32) {
             var box = document.getElementById("messageBox");
