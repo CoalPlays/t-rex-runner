@@ -1,5 +1,5 @@
 $(() =>{
-    $.get("getScores.php",(data) =>{
+    $.get("../../php/getScores.php",(data) =>{
         $("#scores").html(data)
     })
 })

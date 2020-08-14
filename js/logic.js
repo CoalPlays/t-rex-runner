@@ -33,7 +33,7 @@ function askForSave() {
 }
 
 function SaveData() {
-    $.get("insertScore.php", {
+    $.get("../php/insertScore.php", {
         nick: nickname,
         score: _score
     })
