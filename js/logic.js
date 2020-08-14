@@ -1,3 +1,6 @@
+var _score = ""
+var nickname = "";
+
 $(() => {
     $("#darkmode").click(() => {
         if ($("body").hasClass("dark")) {
@@ -11,11 +14,12 @@ $(() => {
         }
         $("darkmode").html("Save")
     })
+
+
 })
 
 
-var _score = ""
-var nickname = "";
+
 
 // Extrahiert den Spieler Score
 function death(score) {
@@ -29,6 +33,8 @@ function askForSave() {
     nickname = prompt("Du hast einen Score von " + _score + " Punkten. Wie ist dein Nickname?")
     if (nickname != null) {
         SaveData();
+    } else {
+        location.reload();
     }
 }
 
@@ -38,5 +44,5 @@ function SaveData() {
         score: _score
     })
     alert("Eintrag gespeichert")
-    location.reload();
-}   
+
+}

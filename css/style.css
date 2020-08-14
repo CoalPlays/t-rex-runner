@@ -15,6 +15,7 @@ footer a {
     text-decoration: none;
     margin-left: 180px;
     margin-right: 180 px;
+    text-align: center;
 }
 
 .dark {
@@ -31,6 +32,14 @@ footer a {
 
 .white>#messageBox>h1 {
     animation: fadeLight 1s forwards;
+}
+
+.white a {
+    animation: fadeLight 1s forwards;
+}
+
+.dark a {
+    animation: fadeDark 1s forwards;
 }
 
 #darkmode {
