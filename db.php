@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $servername = "imninja.eu";
 $username = "trex";
 $password = "123";
@@ -22,4 +22,9 @@ $conn->query($sql)
 
 
 
+?> -->
+
+<?php
+
+echo "test";
 ?>
