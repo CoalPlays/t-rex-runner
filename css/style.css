@@ -14,3 +14,18 @@ footer a{
     margin-left: 180px;
     margin-right: 180 px;
 }
+
+.dark{
+background-color: black;
+}
+
+.dark>#messageBox>h1{
+    color: white;
+    }
+
+
+#darkmode{
+    
+    float: right;
+
+}
